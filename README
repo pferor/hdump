@@ -1,0 +1,19 @@
+Hexadecimal dump in canonical hex+ASCII display format.
+
+Intention:
+  Replicate ``hexdump -C'' behaviour.
+
+TODO:
+  Remove subsequent lines of 00s and add just one `*'.
+
+Goal:
+  Display the input offset in hexadecimal, followed by sixteen
+  space-separated, two-column, hexadecimal bytes, followed by the
+  same sixteen bytes in %_p format enclosed in ``|'' characters.
+
+Compilation:
+  $ make all
+
+Usage:
+  $ ./hdump <file>
+
